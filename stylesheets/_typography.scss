@@ -48,17 +48,15 @@ h1 {
   margin-bottom:  2rem;
   @include respond-above(sm) {
     font-size: 2.625rem;
-    margin-bottom:  3rem;
   }
   @include respond-above(md) {
     font-size: 3.25rem;
     line-height: 1.25;
-    margin-bottom:  4rem;
   }
 }
 
 h2 {
-  @include source-code-light;
+  @include source-code-medium;
   font-size: 1rem;
   line-height: 1.32;
   letter-spacing: 0.5px;
@@ -68,6 +66,18 @@ h2 {
   }
   @include respond-above(sm) {
     font-size: 1.375rem
+  }
+}
+
+h3 {
+  @include source-code-light;
+  font-size: 0.875rem;
+  line-height: 1.42;
+  letter-spacing: 0.7px;
+  margin-bottom:  1.625rem;
+  text-transform: uppercase;
+  @include respond-above(xs) {
+    font-size: 1rem;
   }
 }
 

@@ -233,17 +233,15 @@ h1 {
   margin-bottom: 2rem; }
   @media (min-width: 768px) {
     h1 {
-      font-size: 2.625rem;
-      margin-bottom: 3rem; } }
+      font-size: 2.625rem; } }
   @media (min-width: 992px) {
     h1 {
       font-size: 3.25rem;
-      line-height: 1.25;
-      margin-bottom: 4rem; } }
+      line-height: 1.25; } }
 
 h2 {
   font-family: "Source Code Pro", monospace;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 1rem;
   line-height: 1.32;
   letter-spacing: 0.5px;
@@ -254,6 +252,18 @@ h2 {
   @media (min-width: 768px) {
     h2 {
       font-size: 1.375rem; } }
+
+h3 {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 1.42;
+  letter-spacing: 0.7px;
+  margin-bottom: 1.625rem;
+  text-transform: uppercase; }
+  @media (min-width: 576px) {
+    h3 {
+      font-size: 1rem; } }
 
 strong {
   font-weight: bold; }
