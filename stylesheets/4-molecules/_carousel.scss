@@ -1,0 +1,48 @@
+.carousel{
+	min-height: 35rem;
+	.carousel-inner{
+		.item{
+			span{
+				margin-bottom: 1rem;
+				display: block;
+			}
+		}
+	}
+	.carousel-indicators{
+		li{
+			background-image: asset-url('circle-grey-lg.svg');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			height: 50px;
+			width: 50px;
+			border: none;
+			background-color: transparent;
+			&.active{
+				position: relative;
+				margin: 1px;
+				&:after{
+					content: "";
+					display: block;
+					height: 28px;
+					width: 28px;
+					background-color: $light-grey;
+					border-radius: 33px;
+					position: absolute;
+					top: 11px;
+					left: 11px;
+					@include respond-above(md) {
+						height: 38px;
+						width: 38px;
+						top: 16px;
+						left: auto;
+					}
+				}
+			}
+			@include respond-above(md) {
+				height: 70px;
+				width: 70px;
+			}
+		}
+	}
+}
