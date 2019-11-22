@@ -17,7 +17,7 @@ task :precompile_assets do
 
   sprockets.context_class.class_eval do
     def asset_path(path, options = {})
-      path
+      File.join('images', path)
     end
 
     def asset_url(path, options = {})
