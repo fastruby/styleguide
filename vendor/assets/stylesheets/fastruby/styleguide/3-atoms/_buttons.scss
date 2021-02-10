@@ -18,6 +18,11 @@
 	@include respond-above(sm) {
 		font-size: 1rem;
 	}
+
+	&[disabled]{
+		background-color: $light-grey;
+		pointer-events: none;
+	}
 }
 
 .btn-link{

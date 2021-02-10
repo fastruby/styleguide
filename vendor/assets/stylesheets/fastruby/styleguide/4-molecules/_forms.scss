@@ -148,3 +148,39 @@ form {
     }
   }
 }
+
+// Form for SUTD Project
+form{
+  &.sutd{
+    .input-container{
+
+      .input-text {
+        padding: 1rem;
+        border: none;
+        border-bottom: solid 1px $soft-grey;
+        width: 100%;
+      }
+
+      .input-text:focus {
+        outline: 0;
+        border-bottom: solid 1px $green;
+        
+        + label{
+          font-size: 0.813rem;
+          top: 0;
+          color: $black;
+        }
+      }
+      
+      
+      label {
+        display: block;
+        font-size: 1rem;
+        position: absolute;
+        top: 1rem;
+        color: $soft-grey;
+        transition: all 0.5s ease;
+      }
+    }
+  }
+}
