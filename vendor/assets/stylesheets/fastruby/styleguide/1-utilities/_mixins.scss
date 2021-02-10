@@ -1,0 +1,8 @@
+// Code snippets that can be re-used
+
+@mixin flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}

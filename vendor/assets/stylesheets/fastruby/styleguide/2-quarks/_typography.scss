@@ -1,10 +1,13 @@
 // Font Variables
 $light: 300;
 $medium: 400;
+$regular: 500;
 $bold: 700;
+$bolder: 900;
 
 // Source Code Font
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;500;900&display=swap');
 
 @mixin source-code-light{
   font-family: $font-source-code;
@@ -21,6 +24,22 @@ $bold: 700;
   font-weight: $bold;
 }
 
+/* Mixin fonts SUTD project */
+@mixin source-sutd-light {
+  font-family: $font-source-sutd;
+  font-weight: $light;
+}
+
+@mixin source-sutd-medium {
+  font-family: $font-source-sutd;
+  font-weight: $regular;
+}
+
+@mixin source-sutd-bold {
+  font-family: $font-source-sutd;
+  font-weight: $bolder;
+}
+
 body{
   @include source-code-medium;
   font-size: 16px;
@@ -30,6 +49,10 @@ body{
   overflow-x: hidden;
   .page{
     overflow: hidden;
+  }
+  &.sutd-project{
+    @include source-sutd-medium;
+    text-align: left;
   }
 }
 
@@ -58,6 +81,9 @@ h1 {
     line-height: 1.25;
     margin-bottom:  4rem;
   }
+  &.sutd-project{
+    @include source-sutd-bold;
+  }
 }
 
 h2 {
@@ -72,6 +98,9 @@ h2 {
   @include respond-above(sm) {
     font-size: 1.375rem
   }
+  &.sutd-project{
+    @include source-sutd-light;
+  }
 }
 
 h3 {
@@ -81,6 +110,9 @@ h3 {
   line-height: 1.42;
   letter-spacing: 0.7px;
   margin-bottom: 1.625rem;
+  &.sutd-project{
+    font-family: 'Source Code Pro', monospace;
+  }
 }
 
 @include respond-above(xs) {

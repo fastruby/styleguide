@@ -17,7 +17,7 @@
                 <header class="styleguide-header">
                     <nav class="navbar navbar-expand-md">
                         <a class="navbar-brand" href="#">
-                            <img src="vendor/assets/images/logo-1.png" alt="FastRuby.io Styleguide" />
+                            <img width="50%" src="vendor/assets/images/logo-1.png" alt="FastRuby.io Styleguide" />
                         </a>
 
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -67,6 +67,9 @@
                                 </li>
                                 <li class="nav-item">
                                     <a class="hash-link nav-link" href="#footer" title="Footer">Footer</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="hash-link nav-link" href="#sutd" title="Footer">SUTD Project</a>
                                 </li>
                             </ul>
                         </div>
@@ -385,7 +388,7 @@
                     </div>
                 </div>
 
-                <div id="links-buttons" class="section section-links section-light-grey">
+                <div id="links-buttons" class="section section-links">
                     <h2 class="styleguide-title">Links & Buttons</h2>
                     <div class="section__content">
                         <div class="row">
@@ -408,6 +411,17 @@
                                     </div>
                                     <div class="col-sm-12">
                                         <a href="#" class="btn btn-primary link">Contact Us!</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <h3>Button disabled</h3>
+                                        <h3>&#8595;</h3>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <a href="#" class="btn btn-primary link" disabled>Button</a>
                                     </div>
                                 </div>
                             </div>
@@ -725,8 +739,85 @@ end</code></pre>
                     </div>
                 </div>
 
+                <div id="sutd" class="section section__sutd">
+                    <h1 class="sutd-project">SUTD Project</h1>
+
+                    <h2 class="sutd-project">Tables</h2>
+                    <table class="sutd-table">
+                        <thead>
+                            <tr class="table-header-row">
+                                <th>Organization</th>
+                                <th>Repository</th>
+                                <th class="center-cell">Status</th>
+                                <th class="min-cell">Initial Readiness</th>
+                                <th class="min-cell">Total Readiness</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="">
+                                <td class="max-cell">CompanyName</td>
+                                <td class="max-cell"><a href="">GitRepoName</a></td>
+                                <td><span class="status-label __accepted">Accepted</span></td>
+                                <td class="min-cell right-cell">100%</td>
+                                <td class="min-cell right-cell">100%</td>
+                                <td></td>
+                            </tr>
+                            </tr>
+                                <tr class="">
+                                <td class="max-cell">Company Name</td>
+                                <td class="max-cell"><a href="">GitRepoName</a></td>
+                                <td><span class="status-label __pending">Pending</span></td>
+                                <td class="min-cell right-cell">100%</td>
+                                <td class="min-cell right-cell">100%</td>
+                                <td></td>
+                            </tr>
+                            </tr>
+                                <tr class="">
+                                <td class="max-cell">Company Name</td>
+                                <td class="max-cell"><a href="">GitRepoName</a></td>
+                                <td><span class="status-label __pending">Pending</span></td>
+                                <td class="min-cell right-cell">100%</td>
+                                <td class="min-cell right-cell">100%</td>
+                                <td></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+
+                    <h2 class="sutd-project" style="margin-top: 1rem">Labels</h2>
+
+                    <div class="flex-container" style="display: flex;">
+                        <span class="status-label __accepted">Accepted</span>
+                        <span class="status-label __pending">Pending</span>
+                        <span class="status-label __rejected">Rejected</span>
+                        <span class="status-label __open">Open</span>
+                        <span class="status-label __closed">Closed</span>
+                    </div>
+
+                    <h2 class="sutd-project" style="margin-top: 1rem">Forms</h2>
+
+                    <div class="form">
+                        <form action="#" class="sutd">
+                            <div class="input-container col-sm-6">
+                                <input type="text" id="input-01" class="input-text" />
+                                <label for="input-01">Label input</label>
+                                <p>Input</p>
+                            </div>
+                            <div class="input-container col-sm-6">
+                                <input type="text" id="input-02" class="input-text" value="Text" autofocus/>
+                                <label for="input-02">Label input</label>
+                                <p>Input active</p>
+                            </div>
+                        </form>
+                    </div>
+
+                    
+                </div>
+
             </div>
         </div>
+        
     </div>
 </body>
 

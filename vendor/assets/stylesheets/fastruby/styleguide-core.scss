@@ -3,6 +3,7 @@
 @import "styleguide/1-utilities/breakpoints";
 @import "styleguide/1-utilities/variables";
 @import "styleguide/1-utilities/visibility";
+@import "styleguide/1-utilities/mixins";
 @import "styleguide/1-utilities/convertkit";
 
 // 2-quarks
@@ -10,6 +11,7 @@
 
 // 3-atoms
 @import "styleguide/3-atoms/buttons";
+@import "styleguide/3-atoms/labels";
 
 // 4-molecules
 @import "styleguide/4-molecules/footer";
@@ -25,6 +27,7 @@
 @import "styleguide/4-molecules/location";
 @import "styleguide/4-molecules/code";
 @import "styleguide/4-molecules/audit";
+@import "styleguide/4-molecules/tables";
 
 // 5-pages
 @import "styleguide/5-pages/styleguide";
