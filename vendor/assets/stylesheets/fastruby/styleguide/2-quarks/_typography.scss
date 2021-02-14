@@ -24,19 +24,19 @@ $bolder: 900;
   font-weight: $bold;
 }
 
-/* Mixin fonts SUTD project */
-@mixin source-sutd-light {
-  font-family: $font-source-sutd;
+/* Mixin monospace font */
+@mixin source-monospace-light {
+  font-family: $font-source-monospaced;
   font-weight: $light;
 }
 
-@mixin source-sutd-medium {
-  font-family: $font-source-sutd;
+@mixin source-monospace-medium {
+  font-family: $font-source-monospaced;
   font-weight: $regular;
 }
 
-@mixin source-sutd-bold {
-  font-family: $font-source-sutd;
+@mixin source-monospace-bold {
+  font-family: $font-source-monospaced;
   font-weight: $bolder;
 }
 
@@ -49,10 +49,6 @@ body{
   overflow-x: hidden;
   .page{
     overflow: hidden;
-  }
-  &.sutd-project{
-    @include source-sutd-medium;
-    text-align: left;
   }
 }
 
@@ -81,9 +77,6 @@ h1 {
     line-height: 1.25;
     margin-bottom:  4rem;
   }
-  &.sutd-project{
-    @include source-sutd-bold;
-  }
 }
 
 h2 {
@@ -98,9 +91,7 @@ h2 {
   @include respond-above(sm) {
     font-size: 1.375rem
   }
-  &.sutd-project{
-    @include source-sutd-light;
-  }
+
 }
 
 h3 {
@@ -110,9 +101,6 @@ h3 {
   line-height: 1.42;
   letter-spacing: 0.7px;
   margin-bottom: 1.625rem;
-  &.sutd-project{
-    font-family: 'Source Code Pro', monospace;
-  }
 }
 
 @include respond-above(xs) {
