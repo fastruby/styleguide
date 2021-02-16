@@ -11,6 +11,7 @@ $green: #00d242;
 $blue: #1d4ed8;
 $orange: #ff7a00;
 $grey: #323235;
+$soft-grey: #c4c4c4;
 $light-grey: #dadada;
 $lighter-grey: #EAEAEA;
 
@@ -19,6 +20,9 @@ $image_isotype_height: 70px;
 
 // Typography:
 $font-source-code: 'Oxygen', sans-serif;
+
+/* Monospaced font variable*/
+$font-source-monospace: 'Source Code Pro', monospace;
 
 // Transition:
 $transition: all .2s ease-in;

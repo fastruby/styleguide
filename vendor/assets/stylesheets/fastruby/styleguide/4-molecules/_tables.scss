@@ -1,0 +1,49 @@
+// Table styles component
+.table{
+    font-family: $font-source-monospace;
+    width: 100%;
+    border-spacing: 1rem;
+    background-color: #ffffff;
+
+    th, td{
+        border-bottom: solid 1px $light-grey;
+        border-collapse: collapse;
+    }
+
+    th{
+        font-size: 1.125rem;
+        font-weight: $bolder;
+        padding: 1rem;
+        text-align: left;
+        position: sticky;
+        top: 0;
+        background: white;
+        vertical-align: middle;
+    }
+
+    tr:nth-child(even) {
+        background-color: $white;
+    }
+    
+    td{
+        padding: 1rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .right-cell{
+        text-align: right;
+    }
+    .center-cell{
+        text-align: center;
+    }
+    .max-cell{
+        max-width: 250px;
+        width: 250px;
+    }
+    .min-cell{
+        width: 100px;
+    }
+}
+
