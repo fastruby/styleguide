@@ -50,9 +50,6 @@ header {
       @include respond-above(sm) {
         padding: 0 2rem 0 0;
       }
-      @include respond-above(md) {
-        padding: 0 3rem 0 0;
-      }
     }
   }
   .navbar-brand{
